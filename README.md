@@ -24,10 +24,10 @@ $ npm stop
 ```
 
 ### 复现步骤
-可通过postman等工具，调用api请求
-{ POST }  `http://localhost:7001/upload`
-form-data，上传一个中文名的文件
-查看返回结果中的name字段
+1. 可通过postman等工具，调用api请求
+2. { POST }  `http://localhost:7001/upload`
+3. form-data，上传一个中文名的文件
+4. 查看返回结果中的name字段
 
 
 ### npm scripts
