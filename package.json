@@ -31,12 +31,19 @@
     "stop": "egg-scripts stop --title=egg-server-upload-tmp",
     "dev": "egg-bin dev",
     "debug": "egg-bin debug",
-    "test": "npm run lint -- --fix && npm run test-local",
+    "test": "standard -- --fix && npm run test-local",
     "test-local": "egg-bin test",
     "cov": "egg-bin cov",
     "lint": "eslint .",
-    "ci": "npm run lint && npm run cov",
+    "ci": "standard && npm run cov",
     "autod": "autod"
+  },
+  "standard": {
+    "globals": [
+      "describe",
+      "it",
+      "before"
+    ]
   },
   "ci": {
     "version": "10"
