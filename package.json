@@ -35,7 +35,7 @@
     "test-local": "egg-bin test",
     "cov": "egg-bin cov",
     "lint": "eslint .",
-    "ci": "standard && npm run cov",
+    "ci": "standard -- --fix && npm run cov",
     "autod": "autod"
   },
   "standard": {
