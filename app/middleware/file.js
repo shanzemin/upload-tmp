@@ -8,7 +8,7 @@ module.exports = dir => {
   return async function (ctx, next) {
     fse.ensureDirSync(dir)
     const files = []
-    for (let file of ctx.request.files) {
+    for (const file of ctx.request.files) {
       file.name = file.filename
       file.filename = path.basename(file.filepath)
       const target = path.join(dir, file.filename)
